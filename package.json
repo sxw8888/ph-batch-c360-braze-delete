@@ -1,0 +1,32 @@
+{
+  "name": "ph-batch-c360-home-store-update",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sync-home-store-update.js",
+  "scripts": {
+    "start-loop": "nodemon --exec \"node --require dotenv/config \" src/sync-home-store-update.js dotenv_config_silent=true",
+    "maxrun": "node --max-old-space-size=8192 --require dotenv/config  src/sync-home-store-update.js dotenv_config_silent=true",
+    "start": "node --max-old-space-size=4096 --require dotenv/config  src/sync-home-store-update.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gulshan Wadhwani",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "dotenv": "^6.2.0",
+    "eslint-plugin-jest": "^22.3.2",
+    "lodash": "^4.17.11",
+    "mongoose": "^5.2.7",
+    "mongoose-integer": "^0.1.1",
+    "snowflake-sdk": "^1.1.11"
+  },
+  "devDependencies": {
+    "eslint": "^5.15.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4",
+    "nodemon": "^1.18.3",
+    "winston": "^3.1.0"
+  }
+}
